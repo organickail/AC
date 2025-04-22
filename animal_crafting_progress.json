@@ -1,27 +1,51 @@
-name: Mirror JSON from OpenAI to Gist
-
-on:
-  workflow_dispatch:       # Manual trigger via GitHub UI
-  schedule:
-    - cron: '*/15 * * * *' # Every 15 minutes (you can change this)
-
-jobs:
-  update-gist:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout the Gist
-        uses: actions/checkout@v3
-
-      - name: Fetch JSON from OpenAI host
-        run: |
-          curl -sL https://chat.openai.com/sandbox/animal_crafting_progress_hosted.json -o animal_crafting_progress.json
-
-      - name: Validate and commit if changed
-        run: |
-          cat animal_crafting_progress.json | jq . > /dev/null || { echo "Invalid JSON. Aborting."; exit 1; }
-          git config user.name "AutoSyncBot"
-          git config user.email "bot@animalcrafting.local"
-          git add animal_crafting_progress.json
-          git diff --cached --quiet || git commit -m "🔁 Sync: OpenAI JSON auto-mirrored"
-          git push
+[
+  {
+    "Category": "Villager Spreadsheet",
+    "Progress (%)": 63,
+    "Status": "In Progress",
+    "Last Updated": "2025-04-21",
+    "Notes": "Names sorted by species, 250/493 images added"
+  },
+  {
+    "Category": "Mod Architecture",
+    "Progress (%)": 30,
+    "Status": "Developing",
+    "Last Updated": "2025-04-21",
+    "Notes": "Town registry, biomes, and CRS config underway"
+  },
+  {
+    "Category": "World Map Rendering",
+    "Progress (%)": 100,
+    "Status": "Complete",
+    "Last Updated": "2025-04-21",
+    "Notes": "City Center map finalized and approved"
+  },
+  {
+    "Category": "Pitch Video - Scene 1",
+    "Progress (%)": 95,
+    "Status": "Rendering",
+    "Last Updated": "2025-04-21",
+    "Notes": "Annabelle + City backdrop in final cut"
+  },
+  {
+    "Category": "Pitch Video - Scene 2 (Map)",
+    "Progress (%)": 80,
+    "Status": "Rendering",
+    "Last Updated": "2025-04-21",
+    "Notes": "Using updated concept image for biome layout"
+  },
+  {
+    "Category": "Pitch Video - Scene 3+",
+    "Progress (%)": 0,
+    "Status": "Planned",
+    "Last Updated": "-",
+    "Notes": ""
+  },
+  {
+    "Category": "JSON Sync System",
+    "Progress (%)": 90,
+    "Status": "Live",
+    "Last Updated": "2025-04-21",
+    "Notes": "GitHub Action + Gist + Sheets fully wired"
+  }
+]
