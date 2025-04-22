@@ -1,51 +1,51 @@
 [
   {
     "Category": "Villager Spreadsheet",
-    "Progress (%)": 63,
+    "Progress (%)": 66,
     "Status": "In Progress",
-    "Last Updated": "2025-04-21",
-    "Notes": "Names sorted by species, 250/493 images added"
+    "Last Updated": "2025-04-22",
+    "Notes": "Species sorted, 310/493 renamed, image sync ongoing"
   },
   {
     "Category": "Mod Architecture",
-    "Progress (%)": 30,
+    "Progress (%)": 34,
     "Status": "Developing",
-    "Last Updated": "2025-04-21",
-    "Notes": "Town registry, biomes, and CRS config underway"
-  },
-  {
-    "Category": "World Map Rendering",
-    "Progress (%)": 100,
-    "Status": "Complete",
-    "Last Updated": "2025-04-21",
-    "Notes": "City Center map finalized and approved"
+    "Last Updated": "2025-04-22",
+    "Notes": "CRS world layout finalized, biome hooks added"
   },
   {
     "Category": "Pitch Video - Scene 1",
-    "Progress (%)": 95,
-    "Status": "Rendering",
-    "Last Updated": "2025-04-21",
-    "Notes": "Annabelle + City backdrop in final cut"
+    "Progress (%)": 100,
+    "Status": "Complete",
+    "Last Updated": "2025-04-22",
+    "Notes": "Isabello sprite, animation and sound finalized"
   },
   {
     "Category": "Pitch Video - Scene 2 (Map)",
-    "Progress (%)": 80,
+    "Progress (%)": 87,
     "Status": "Rendering",
-    "Last Updated": "2025-04-21",
-    "Notes": "Using updated concept image for biome layout"
+    "Last Updated": "2025-04-22",
+    "Notes": "Map rendered with CRS lines and mountain ring"
   },
   {
-    "Category": "Pitch Video - Scene 3+",
-    "Progress (%)": 0,
-    "Status": "Planned",
-    "Last Updated": "-",
-    "Notes": ""
+    "Category": "Pitch Video - Scene 3 (City Center)",
+    "Progress (%)": 60,
+    "Status": "Rendering",
+    "Last Updated": "2025-04-22",
+    "Notes": "Retail level + villager wave animations implemented"
   },
   {
-    "Category": "JSON Sync System",
-    "Progress (%)": 90,
+    "Category": "JSON/GitHub/Sheets Sync",
+    "Progress (%)": 100,
     "Status": "Live",
-    "Last Updated": "2025-04-21",
-    "Notes": "GitHub Action + Gist + Sheets fully wired"
+    "Last Updated": "2025-04-22",
+    "Notes": "One-click Google Sheet \u2192 GitHub JSON integration working"
+  },
+  {
+    "Category": "Post-Game Real Estate",
+    "Progress (%)": 50,
+    "Status": "Scripted",
+    "Last Updated": "2025-04-22",
+    "Notes": "Condo tiers, island slots, pricing model written"
   }
 ]
